@@ -46,9 +46,64 @@
         <div id="image-1"></div>
     </div> 
 
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-    </p>
+    <!-- Featured products -->
+    <h2 class="text-center" style="margin-top: 25px;">Featured products</h2>
+
+    <div class="col-md-8" id="featured">
+        <div class="row">
+            <div class="col-md-3">
+                <h4>Levis Jeans</h4>
+                <img src="images/levis.png" alt="Levis" style="height:150px !important;">
+                <p class="list-price text-danger"><s>List Price: $24.99</s></p>
+                <p class="price">Our Price: $19.99</p>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Sweatshirt</h4>
+                <img src="images/hoodie.png" alt="Hoodie" style="height:150px !important;">
+                <p class="list-price text-danger"><s>List Price: $29.99</s></p>
+                <p class="price">Our Price: $23.99</p>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Beanie</h4>
+                <img src="images/beanie.png" alt="Beanie" style="height:150px !important;">
+                <p class="list-price text-danger"><s>List Price: $14.99</s></p>
+                <p class="price">Our Price: $9.99</p>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Jacket</h4>
+                <img src="images/jacket.png" alt="Jacket" style="height:150px !important;">
+                <p class="list-price text-danger"><s>List Price: $44.99</s></p>
+                <p class="price">Our Price: $35.99</p>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Bracelet</h4>
+                <img src="images/bracelet.png" alt="Bracelet" style="height:150px !important;">
+                <p class="list-price text-danger"><s>List Price: $11.99</s></p>
+                <p class="price">Our Price: $9.99</p>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Socks</h4>
+                <img src="images/socks.png" alt="Socks" style="height:150px !important;">
+                <p class="list-price text-danger"><s>List Price: $5.99</s></p>
+                <p class="price">Our Price: $3.99</p>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+            </div>
+
+        </div>
+
+        <footer class="text-center" id="footer">&copy; Copyright 2022 PHP mandatory assignment 2</footer>
+
+    </div>
 
 </body>
  

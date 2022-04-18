@@ -35,3 +35,13 @@ a{
     background-position: left bottom;
     background-size: auto 200px;
 }
+
+#featured{
+    margin-left: 18%;
+    margin-top: 5%;
+}
+
+#footer{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
