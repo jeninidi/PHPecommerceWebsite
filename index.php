@@ -115,7 +115,7 @@
         include 'details-modal-socks.php';
         include 'details-modal-sweatshirt.php';     
     ?>
-    <!-- End of Details modal -->
+    <!-- End of Details modal --> 
 
 </body>
  

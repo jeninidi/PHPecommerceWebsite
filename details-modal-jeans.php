@@ -3,8 +3,8 @@
         <div class="modal-content">
             <div class="modal-header">
 
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"> 
-                    <span aira-hidden="true"&times;></span>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close" style="margin:0 !important"> 
+                    <span aira-hidden="true"&times;>Close</span>
                 </button> 
 
                 <h4 class="modal-title text-center">Levis Jeans</h4>
@@ -16,7 +16,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="center-block">
-                                <img src="images/levis.png" alt="Levis Jeans" class="details img-responsive">
+                                <img src="images/levis.png" alt="Levis Jeans" class="details img-responsive" style="height:150px !important; margin-left: 30%; margin-top: 15%;">
                             </div>   
                         </div>
 
@@ -29,8 +29,24 @@
 
                             <hr>
 
-                            <p>Price: $24.99</p>
+                            <p>Price: $19.99</p>
                             <p>Brand: Levis </p>
+
+                            <form action="add_cart.php" method="post">
+                                <div class="form-group">
+                                    <div class="col-xs-3">
+                                        <label for="quantity" id="quantity-label">Quantity:</label>
+                                        <input type="text" class="form-control" id="quantity" name="quantity">
+                                    </div>
+
+                                    <br><br>
+
+                                    <div class="form-group">
+                                        <label for="size">Size:</label>
+                                        <select name="" id=""></select>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
 
                     </div>
