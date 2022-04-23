@@ -105,6 +105,18 @@
 
     </div>
 
+    <!-- Detais-modal -->
+    <?php 
+        
+        include 'details-modal-jeans.php'; 
+        include 'details-modal-beanie.php';
+        include 'details-modal-bracelet.php';
+        include 'details-modal-jacket.php';
+        include 'details-modal-socks.php';
+        include 'details-modal-sweatshirt.php';     
+    ?>
+    <!-- End of Details modal -->
+
 </body>
  
 </html> 
