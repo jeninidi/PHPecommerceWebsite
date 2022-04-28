@@ -1,13 +1,8 @@
 <?php
-    // include 'db_connection.php';
-    // $conn = OpenCon();
-    // echo "Connected Successfully";
-    // CloseCon($conn);
-
-    $con = mysqli_connect('localhost', 'root');
-    mysqli_select_db($con, 'EcommerceShop');
-    $sql = "SELECT * FROM products WHERE featured=1";
-    $featured = $con->query($sql);
+    require_once 'init.php'; 
+    
+    $sql = "SELECT * FROM products WHERE featured = 1";
+    $featured =$db->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -67,8 +62,8 @@
             <div class="col-md-3">
                 <h4> <?= $products['title'];?> </h4>
                 <img src=" <?= $products['image']; ?> " alt=" <?= $products['title']; ?>" style="height:150px !important;"/>
-                <p class="list-price text-danger"><s><?= $products['list_price']; ?></s></p>
-                <p class="price"> <?= $products['price']; ?> </p>
+                <p class="list-price text-danger"><s>List Price:<?= $products['list_price']; ?> $</s></p>
+                <p class="price"> Price: <?= $products['price']; ?> $</p>
                 <a href="details.php">
                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1"> 
                   Details

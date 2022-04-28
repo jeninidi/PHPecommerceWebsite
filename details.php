@@ -1,14 +1,12 @@
 <?php
 
-  $con = mysqli_connect('localhost', 'root');
-  mysqli_select_db($con, 'EcommerceShop');
-  $sql = "SELECT * FROM products WHERE featured=1";
-  $featured = $con->query($sql);
+require_once 'init.php'; 
 
+$sql = "SELECT * FROM products WHERE featured = 1";
+$featured =$db->query($sql);
 ?>
 
-
-<div class="modal fade details-6" id="details-6" tableindex="-1" role="dialog" aria-labelledby="details-1" aria-hidden="true">
+<div class="modal fade details-1" id="details-1" tableindex="-1" role="dialog" aria-labelledby="details-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -47,7 +45,7 @@
                                         <label for="quantity" id="quantity-label">Quantity:</label>
                                         <input type="text" class="form-control" id="quantity" name="quantity">
                                     </div>
-                                    
+
                                     <?php endwhile; ?>
 
                                     <br><br>
