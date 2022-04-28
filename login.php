@@ -10,7 +10,7 @@ $errors    = array();
 ?>
 <style>
 	body{
-		background-image: url("/ecommerce/images/land.jpg");
+		background-image: url("images/background.jpg");
 		background-size: 100vw 100vh;
 		background-attachment: fixed;
 	}
@@ -20,6 +20,7 @@ $errors    = array();
 <div id="login-form">
 	<div>
 		<?php 
+
 
 			if ($_POST) {
 				//form validation
@@ -86,4 +87,3 @@ $errors    = array();
 	<p class="text-right btn"><a href="/phpAssignment2/index.php" alt="home">Visit Site</a></p>
 </div>
 
-<?php include 'includes/footer.php'; ?>

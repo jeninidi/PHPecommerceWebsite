@@ -43,7 +43,15 @@
                     </ul>
                 </li>
             </ul>
+          
+            <a href="/phpAssignment2/login.php"> <button>Log in</button></a>
 
+            <a href="/phpAssignment2/admin.php"> <button>Admin</button></a>
+
+            <a href="/phpAssignment2/add_cart.php"> <button>View my cart</button></a>
+                
+            
+                
         </div>
 
     </nav>
