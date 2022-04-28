@@ -1,3 +1,15 @@
+<?php
+    // include 'db_connection.php';
+    // $conn = OpenCon();
+    // echo "Connected Successfully";
+    // CloseCon($conn);
+
+    $con = mysqli_connect('localhost', 'root');
+    mysqli_select_db($con, 'EcommerceShop');
+    $sql = "SELECT * FROM products WHERE featured=1";
+    $featured = $con->query($sql);
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -51,15 +63,24 @@
 
     <div class="col-md-8" id="featured">
         <div class="row">
+        <?php while($products = mysqli_fetch_assoc($featured)): ?>
             <div class="col-md-3">
-                <h4>Levis Jeans</h4>
-                <img src="images/levis.png" alt="Levis" style="height:150px !important;">
-                <p class="list-price text-danger"><s>List Price: $24.99</s></p>
-                <p class="price">Our Price: $19.99</p>
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+                <h4> <?= $products['title'];?> </h4>
+                <img src=" <?= $products['image']; ?> " alt=" <?= $products['title']; ?>" style="height:150px !important;"/>
+                <p class="list-price text-danger"><s><?= $products['list_price']; ?></s></p>
+                <p class="price"> <?= $products['price']; ?> </p>
+                <a href="details.php">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1"> 
+                  Details
+                </button>
+              </a>
             </div>
+            
+            <?php endwhile; ?>
 
-            <div class="col-md-3">
+            <!-- This is now obsolete as products come from the DB -->
+
+            <!-- <div class="col-md-3">
                 <h4>Sweatshirt</h4>
                 <img src="images/hoodie.png" alt="Hoodie" style="height:150px !important;">
                 <p class="list-price text-danger"><s>List Price: $29.99</s></p>
@@ -97,7 +118,7 @@
                 <p class="list-price text-danger"><s>List Price: $5.99</s></p>
                 <p class="price">Our Price: $3.99</p>
                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-6">Details</button>
-            </div>
+            </div> -->
 
         </div>
 
@@ -113,7 +134,9 @@
         include 'details-modal-bracelet.php';
         include 'details-modal-jacket.php';
         include 'details-modal-socks.php';
-        include 'details-modal-sweatshirt.php';     
+        include 'details-modal-sweatshirt.php';   
+        include 'details.php'; 
+  
     ?>
     <!-- End of Details modal --> 
 
