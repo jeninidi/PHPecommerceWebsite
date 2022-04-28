@@ -10,7 +10,7 @@
 <html lang="en">
 
 <head>
-    <title>Ecommerce website for PHP mandatory assignment</title>
+    <title> Ecommerce website for PHP mandatory assignment</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css"/> 
     <link rel="stylesheet" href="css/main.css"/>
@@ -26,24 +26,27 @@
      
     <nav class="navbar navbar-default navbar-fixed-top" id="navbar">  
         <div class="container">
-            <a href="/phpAssignment2/index.php" class="navbar-brand" id="text">Ecommerce shop</a>
+            <a href="/phpAssignment2/index.php" class="navbar-brand" style="color:gray;"id="text">Ecommerce shop</a>
 
             <ul class="nav navbar-nav">
                 <!-- Dropdown menu -->
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="text">Men fashion
+                <li class="dropdown" style="color:gray;">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="text" style="color:gray;">Fashion
                         <span class="caret" ></span>
                     </a>
                     
-                    <ul class="dropdown-menu" role="menu">
-                         <li> <a href="#">Shirts </a> </li>
+                    <ul class="dropdown-menu" role="menu" style="color:gray;">
+                         <li> <a href="#">Shirts </a> 
+                            <li>Men</li>
+                            <li>Women</li>
+                        </li>
                          <li> <a href="#">Pants </a> </li>
                          <li> <a href="#">Shoes </a> </li>
                          <li> <a href="#">Accessories </a> </li>
                     </ul>
                 </li>
             </ul>
-          
+            
             <a href="/phpAssignment2/login.php"> <button>Log in</button></a>
 
             <a href="/phpAssignment2/admin.php"> <button>Admin</button></a>

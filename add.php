@@ -14,11 +14,11 @@ $image = $_POST['image'];
 $featured = $_POST['featured'];
 
 
-$sqlproduct = "INSERT INTO `products` (`id`, `title`, `price`, `list_price`,`brand`,`description`, `image`, `featured`) VALUES (NULL, '$title', '$price','$list_price', '$brand', '$description', '$image', '$featured')";
+$products = "INSERT INTO `products` (`id`, `title`, `price`, `list_price`,`brand`,`description`, `image`, `featured`) VALUES (NULL, '$title', '$price','$list_price', '$brand', '$description', '$image', '$featured')";
 
-$successproduct = mysqli_query($db, $sqlproduct);
+$successproducts = mysqli_query($db, $products);
 
-if($successproduct){
+if($successproducts){
     echo "Success";
 }
 
