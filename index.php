@@ -64,7 +64,7 @@
                 <img src="images/hoodie.png" alt="Hoodie" style="height:150px !important;">
                 <p class="list-price text-danger"><s>List Price: $29.99</s></p>
                 <p class="price">Our Price: $23.99</p>
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-2">Details</button>
             </div>
 
             <div class="col-md-3">
@@ -72,7 +72,7 @@
                 <img src="images/beanie.png" alt="Beanie" style="height:150px !important;">
                 <p class="list-price text-danger"><s>List Price: $14.99</s></p>
                 <p class="price">Our Price: $9.99</p>
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-3">Details</button>
             </div>
 
             <div class="col-md-3">
@@ -80,7 +80,7 @@
                 <img src="images/jacket.png" alt="Jacket" style="height:150px !important;">
                 <p class="list-price text-danger"><s>List Price: $44.99</s></p>
                 <p class="price">Our Price: $35.99</p>
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-4">Details</button>
             </div>
 
             <div class="col-md-3">
@@ -88,7 +88,7 @@
                 <img src="images/bracelet.png" alt="Bracelet" style="height:150px !important;">
                 <p class="list-price text-danger"><s>List Price: $11.99</s></p>
                 <p class="price">Our Price: $9.99</p>
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-5">Details</button>
             </div>
 
             <div class="col-md-3">
@@ -96,7 +96,7 @@
                 <img src="images/socks.png" alt="Socks" style="height:150px !important;">
                 <p class="list-price text-danger"><s>List Price: $5.99</s></p>
                 <p class="price">Our Price: $3.99</p>
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-6">Details</button>
             </div>
 
         </div>

@@ -43,16 +43,24 @@
 
                                     <div class="form-group">
                                         <label for="size">Size:</label>
-                                        <select name="" id=""></select>
+                                        <select name="size" id="size" class="form-control">
+                                            <option value="26">26</option>
+                                            <option value="28">28</option>
+                                            <option value="32">32</option>
+                                        </select>
                                     </div>
                                 </div>
                             </form>
                         </div>
-
                     </div>
                 </div>
             </div>
-
+            <div class="modal-footer ">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+                <button class="btn btn-warning" type="submit">
+                    <span class="glyphicon glyphicon-shopping-cart"></span> Add to cart 
+                </button>
+            </div>
         </div>
     </div>
 </div>
